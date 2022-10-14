@@ -1,0 +1,77 @@
+.banner .sidebarAnimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 550px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.c{
+    position: absolute;
+}
+
+.c1{
+    top: 150px;
+    left: 100px;
+}
+
+.c2{
+    top: 50%;
+    left: 200px;
+}
+
+.c3{
+    bottom: 100px;
+    left: 300px;
+}
+
+.sidebarAnimation i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30vmin;
+    height: 30vmin;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: move 10s forwards infinite;
+    background: linear-gradient(127deg, rgb(255, 255, 0) 10%, rgb(236, 194, 115) 10%, rgb(240, 128, 128) 100%);
+}
+
+.sidebarAnimation i:nth-child(2) {
+    background: rgba(255, 255, 255, .3);
+    box-shadow: 0 0 1rem rgba(255, 255, 255, .7),
+        0 0 0 1px rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
+}
+
+.sidebarAnimation .c1 i:nth-child(2) {
+    animation-delay: -2s;
+}
+
+.sidebarAnimation .c2 i:nth-child(2) {
+    animation-delay: -3s;
+}
+
+.sidebarAnimation .c3 i:nth-child(2) {
+    animation-delay: -4s;
+}
+
+@keyframes move {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) rotate(0) translateY(-30%);
+    }
+
+    25% {
+        transform: translate(-50%, -50%) rotate(-90deg) translateY(-30%);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) rotate(180deg) translateY(-30%);
+    }
+}
+
+
+/* ************************ */

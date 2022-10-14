@@ -1,0 +1,271 @@
+/* =============
+ table of contents
+===============
+ 
+1. global styles
+2. side bar
+3. Education
+4. Work Experience
+5. Footer
+6. Media Query
+ 
+*/
+ 
+ 
+/* ===============
+   1. global style
+================ */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+} 
+ 
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body{
+    background-color: #E9E9E9;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+    line-height: 30px;
+}
+
+.fa-solid, .icon{
+    color: darkcyan;
+    padding-right: 15px;
+}
+
+.content{
+    width: 95%;
+    margin: 0 auto;
+    padding: 50px;
+    color: #444;
+
+    display: grid;
+    grid-template-areas:
+        "sidebar education education"
+        "sidebar  experience experience";
+    justify-content: center;
+    align-items: stretch;
+}
+
+.sidebar, 
+.education, 
+.experience{
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px lightgray, -5px -5px 10px lightgray;
+}
+
+/* ===============
+   2. side bar
+================ */
+
+.sidebar{
+    grid-area: sidebar;
+    width: 350px;
+    margin-right: 10px;
+    padding: 30px 15px;
+    max-height: 900px;
+}
+.sidebar h2 {
+    margin: 15px;
+}
+/********** breif  */
+.breif{
+    padding-bottom: 20px;
+    min-height: 250px;
+}
+.avatar{
+    position: relative;
+}
+.avatar h1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+}
+
+.sidebar ul{
+    padding-top: 70px;
+    padding-left: 20px;
+}
+.sidebar ul li a{
+    color: #444;
+}
+
+
+/********** skills  */
+.skill-level{
+    margin: 20px 10px;
+    padding: 15px 0;
+}
+
+.level p{
+    margin-left: 10px;
+}
+
+.skill-container{
+    background-color: #e2e2e2;
+    margin: 10px 5px;
+    border-radius: 10px;
+}
+.percent{
+    background-color: darkcyan;
+    color: #fff;
+    padding: 1px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+.percent-html::after{ content: "90%";}
+.percent-html{ width: 90%; }
+
+.percent-js::after{ content: "70%";}
+.percent-js{ width: 70%; }
+
+.percent-py::after{ content: "60%";}
+.percent-py{ width: 60%; }
+
+.percent-mysql::after{ content: "70%";}
+.percent-mysql{ width: 70%; }
+
+.percent-mongo::after{ content: "50%";}
+.percent-mongo{ width: 50%; }
+
+
+/********** Langauge  */
+.lang{
+    margin: 20px 10px;
+    padding: 15px 0;
+}
+
+.lang1, .lang2{
+    background-color: #e2e2e2;
+    margin: 10px 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+/* ===============
+   3. Education
+================ */
+
+.education{
+    grid-area: education;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 30px;
+    max-width: 619px;
+}
+.education h1{
+    border-bottom: 1px solid #444;
+    line-height: 2.5;
+}
+.education div{
+    padding: 20px;
+}
+.education div h3{
+    padding: 5px 0;
+}
+.education div p{
+    padding: 5px;
+    line-height: 2;
+}
+
+
+/* ===============
+   4. Work Experience
+================ */
+
+.experience{
+    grid-area: experience;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 30px;
+    max-width: 619px;
+}
+.experience h1{
+    line-height: 2.5;
+    border-bottom: 1px solid #444;
+}
+.experience div{
+    padding: 20px;
+}
+.experience div h3{
+    padding: 5px 0;
+}
+.experience div p{
+    padding: 5px;
+    line-height: 2;
+}
+
+/* ===============
+   5. Footer
+================ */
+
+footer{
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    bottom: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+/* footer p{
+    color: #444;
+    font-size: 13px;
+} */
+footer ul li{
+    margin-top: 15px;
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+}
+
+
+/* ==================
+   6. Media Query
+==================== */
+
+@media (max-width: 900px) {
+    .sidebar{
+        width: 300px;
+    } 
+    .education, 
+    .experience{
+        width: 350px;
+    }
+}
+
+@media (max-width: 660px) {
+    .content{
+        width: 100%;
+        padding: 20px;
+    
+        grid-template-areas:
+            "sidebar sidebar"
+            "education education"
+            "experience experience";
+    }
+
+    .sidebar, 
+    .education, 
+    .experience{
+        width: 90%;
+        margin: 15px;
+    }
+}

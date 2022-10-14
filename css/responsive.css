@@ -1,0 +1,124 @@
+@media (max-width: 900px){
+    .banner .sidebarImg {
+        width: 430px;
+    }
+    .banner .contentBox {
+        width: calc(100% - 430px);
+        padding: 10px;
+    }
+    .banner .contact{
+        padding: 40px;
+    }
+    .sidebar {
+        width: calc(100% - 430px);
+    }
+    .about .content .textBox {
+        width: 100%;
+        padding: 10px;
+    }
+    .services .content .servicesbox {
+        padding: 20px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 830px){
+    .banner .sidebarImg {
+        width: 360px;
+    }
+    .banner .contentBox {
+        width: calc(100% - 360px);
+        padding: 10px;
+    }
+    .banner .contact{
+        padding: 40px;
+    }
+    .sidebar {
+        width: calc(100% - 360px);
+    }
+    .about .content .textBox,
+    .about .content .imgBox{
+        width: 50%;
+    }
+}
+
+@media (max-width: 750px) {
+    .banner .sidebarImg {
+        display: none;
+    }
+    .banner .contentBox {
+        width: 100%;
+    }
+    .about .content{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        align-content: center;
+    }
+    .about .content .textBox{
+        margin-top: 50px;
+        text-align: center;
+        width: 100%;
+    }
+    .about .content .imgBox{
+        margin: 0;
+    }
+    .sidebar {
+        width: 50%
+    }
+    .sidebar ul li a{
+        font-size: 1.8em;
+    }
+    .contact .contactForm {
+        width: 500px;
+    }
+    .contact .contactForm .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact .contactForm .row .col50 {
+        width: 80%;
+    }
+    .contact .contactForm .row textarea {
+        width: 400px;
+    }
+    .sidebar ul li a {
+        font-size: 1.5em;
+    }
+    .contact .contactForm {
+        width: 400px;
+    }
+    .contact .contactForm .row .col50 {
+        width: 100%;
+    }
+    .contact .contactForm .row textarea {
+        width: 380px;
+    }
+}
+
+@media (max-width: 450px) {
+        .about .content .textBox{
+        padding: 0;
+    }
+    .about .content .imgBox {
+        width: 100%;
+    }
+    .work .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+    }
+    .contact .contactForm{
+        width: 320px;
+    }
+        .contact .contactForm .row{
+        width: 100%;
+    }
+    .contact .contactForm .row textarea {
+        width: 300px;
+    }
+}
