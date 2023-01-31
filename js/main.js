@@ -8,7 +8,7 @@ function menuToggle(){
 
 // ********************************
 
-const toTop = document.querySelector("#to-top");
+const toTop = document.querySelector(".top-btn");
 
 toTop.addEventListener("click", function () {
 
@@ -19,11 +19,4 @@ toTop.addEventListener("click", function () {
   });
 });
 
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 100) {
-    toTop.classList.add("active");
-  } else {
-    toTop.classList.remove("active");
-  }
-});
     

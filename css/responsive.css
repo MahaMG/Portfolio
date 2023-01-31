@@ -40,6 +40,22 @@
     .about .content .imgBox{
         width: 50%;
     }
+    .contact .contactContainer{
+        margin: 30px 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .contact .contactContainer .contactInfo{
+        border-left:  none;
+        text-align: left;
+        padding-left: 0;
+    }
+    .contact .contactContainer .contactForm .row .col50,
+    .contact .contactContainer .contactForm .row .col100 {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 750px) {
@@ -70,9 +86,6 @@
     .sidebar ul li a{
         font-size: 1.8em;
     }
-    .contact .contactForm {
-        width: 500px;
-    }
     .contact .contactForm .row {
         flex-wrap: wrap;
         justify-content: center;
@@ -98,12 +111,13 @@
 }
 
 @media (max-width: 450px) {
-        .about .content .textBox{
+    .about .content .textBox{
         padding: 0;
     }
     .about .content .imgBox {
         width: 100%;
     }
+    
     .work .content {
         display: flex;
         justify-content: center;
@@ -111,14 +125,5 @@
         flex-wrap: nowrap;
         align-content: center;
         align-items: center;
-    }
-    .contact .contactForm{
-        width: 320px;
-    }
-        .contact .contactForm .row{
-        width: 100%;
-    }
-    .contact .contactForm .row textarea {
-        width: 300px;
     }
 }

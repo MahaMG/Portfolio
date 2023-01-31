@@ -44,8 +44,8 @@
                 <a href="CV/index.html" title="Resume" target="_blank" class="btn">Resume</a>
 
                 <ul class="soial">
-                    <li><a href="https://www.linkedin.com/in/maha-mg/" class="icon fa-brands fa-linkedin" title="LinkedIn"></a></li>
-                    <li><a href="https://github.com/MahaMG" class="icon fa-brands fa-github-square" title="Github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/maha-mg/" class="icon fa-brands fa-linkedin" target="_blank" title="LinkedIn"></a></li>
+                    <li><a href="https://github.com/MahaMG" class="icon fa-brands fa-github-square" target="_blank" title="Github"></a></li>
                 </ul>
             </div>
 
@@ -73,16 +73,16 @@
             <h2>Our Services</h2>
         </div>
         <div class="content">
-            <div class="serviceBox">
+            <!-- <div class="serviceBox">
                 <img src="imgs/services/Design.png" alt="">
                 <h2>Design your website</h2>
-            </div>
+            </div> -->
             <div class="serviceBox">
-                <img src="imgs/services/Build.png" alt="">
+                <img src="imgs/services/b2.png" alt="">
                 <h2>Build your website</h2>
             </div>
             <div class="serviceBox">
-                <img src="imgs/services/Develop.png" alt="">
+                <img src="imgs/services/d2.png" alt="">
                 <h2>Develop your work</h2>
             </div>
         </div>
@@ -93,6 +93,17 @@
             <h2>Recent work</h2>
         </div>
         <div class="content">
+             <div class="workBox">
+                <div class="imgBox">
+                    <img src="imgs/projects/personal-site-template.png" alt="personal-site-template">
+                </div>
+                <div class="textBox">
+                    <h3>personal site template</h3>
+                </div>
+                <div class="btnURL">
+                    <a href="https://mahamg.github.io/personal-site-template/" target="_blank">Visit</a>
+                </div>
+            </div>
             <div class="workBox">
                 <div class="imgBox">
                     <img src="imgs/projects/AdminDashboard.png" alt="AdminDashboard">
@@ -145,32 +156,47 @@
             <h2>Get in touch</h2>
         </div>
 
-        <form class="contactForm" action="https://formspree.io/f/xgeqzwnl" method="POST">
-            <div class="row">
-                <div class="col50">
-                    <input type="text" id="name" name="name" required placeholder="Name">
+        <div class="contactContainer">
+            <form class="contactForm" action="https://formspree.io/f/xgeqzwnl" method="POST">
+                <div class="row">
+                    <div class="col50">
+                        <input type="text" id="name" name="name" required placeholder="Name">
+                    </div>
+                    <div class="col50">
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                    </div>
                 </div>
-                <div class="col50">
-                    <input type="email" id="email" name="email" required placeholder="Email">
+                <div class="row">
+                    <div class="col100">
+                        <textarea placeholder="Message" name="Message" id="msg"></textarea>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col100">
+                        <button type="submit" value="Send" id="sendMsg">Send</button>
+                    </div>
+                </div>    
+            </form>
+
+            <div class="contactInfo">
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Makkah, KSA</li>
+                    <li><a href="mailto:Maha.MG.1995@gmail.com"><i class="fa-solid fa-envelope"></i>Maha.MG.1995@gmail.com</a></li>
+                    <li><a href="tel:+966545820666"><i class="fa-solid fa-phone"></i>+966545820666</a></li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col100">
-                    <textarea placeholder="Message" name="Message" id="msg"></textarea>
-                </div>
+        </div>
+
+        <div class="footer">
+            <button class="top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+
+            <div>
+                <a href="https://www.linkedin.com/in/maha-mg/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/MahaMG" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.fiverr.com/mahaghamdi76/build-and-develop-user-interfaces" target="_blank"><i class="fa-solid fa-f"></i></a>
             </div>
-            <div class="row">
-                <div class="col100">
-                    <button type="submit" value="Send" id="sendMsg">Send</button>
-                </div>
-            </div>    
-        </form>
+        </div>
     </section>
-
-
-    <button Id="to-top">
-        <span class="material-icons">arrow_upward</span>
-    </button>
     
 
     <div class="sidebar">

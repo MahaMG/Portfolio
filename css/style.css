@@ -44,29 +44,6 @@ section {
     min-height: 100vh;
 }
 
-#to-top {
-    float: right;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #ececec;
-    color: #444444;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-}
-
-#to-top.active {
-    background: #cccccc;
-    opacity: 1;
-    pointer-events: auto;
-}
-
 /**********************
     2. Menu Toggle
 **********************/
@@ -382,7 +359,7 @@ section {
 .work .content .workBox {
     position: relative;
     width: 250px;
-    height: 250px;
+    height: 200px;
     margin: 20px;
     text-align: center;
 }
@@ -455,36 +432,44 @@ section {
 
 .contact {
     background-color: #222;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.contact .contactForm {
     position: relative;
-    width: 700px;
-    margin-top: 20px;
 }
 
-.contact .contactForm .row {
+.contact .contactContainer{
+    margin-top: 80px;
+    position: relative;
     width: 100%;
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-.contact .contactForm .row .col50 {
+.contact .contactContainer .contactForm {
+    position: relative;
     width: 50%;
-    margin: 10px;
+    margin-top: 20px;
+    margin-right: 40px;
 }
 
-.contact .contactForm .row .col100 {
+.contact .contactContainer .contactForm .row {
     width: 100%;
-    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.contact .contactContainer .contactForm .row .col50 {
+    width: 49%;
+}
+
+.contact .contactContainer .contactForm .row .col100 {
+    width: 99%;
+    margin: 10px 0;
     text-align: center;
 }
 
-.contact .contactForm .row input,
-.contact .contactForm .row textarea {
+.contact .contactContainer .contactForm .row input,
+.contact .contactContainer .contactForm .row textarea {
     width: 100%;
     padding: 10px;
     border: none;
@@ -496,11 +481,11 @@ section {
     border-radius: 5px;
 }
 
-.contact .contactForm .row textarea {
+.contact .contactContainer .contactForm .row textarea {
     height: 100px;
 }
 
-.contact .contactForm .row button {
+.contact .contactContainer .contactForm .row button {
     all: unset;
     background-color: lightcoral;
     color: #fff;
@@ -511,4 +496,59 @@ section {
     cursor: pointer;
     max-width: 150px;
     border-radius: 5px;
+}
+
+.contact .contactContainer .contactInfo{
+    margin-top: 10px;
+    padding-left: 30px;
+    border-left: 1px solid #eee;
+}
+
+.contact .contactContainer .contactInfo ul,
+.contact .contactContainer .contactInfo ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: #eee;
+}
+
+.contact .contactContainer .contactInfo ul li .fa-solid{
+    color: #eee;
+    padding-right: 10px 15px;
+}
+
+/* 
+    FOOTER
+*/
+
+.contact .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+.contact .footer:hover {
+    background-color: #111;
+}
+
+.top-btn {
+    all: unset;
+    text-align: center;
+    margin: 0;
+    padding: 15px 30px;
+    letter-spacing: 1px;
+    color: #fff;
+    border-bottom: 1px dashed #eee;
+    cursor: pointer;
+}
+
+.contact .footer .fa-brands, .fa-solid {
+    color: #fff;
+    font-size: 20px;
+    margin: 15px 8px;
+}
+
+.fa-brands:hover {
+    color: #9b9898;
 }
