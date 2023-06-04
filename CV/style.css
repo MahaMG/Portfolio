@@ -15,6 +15,12 @@
 /* ===============
    1. global style
 ================ */
+:root {
+  --darkBlue: #1515a4e0;
+  --lightBlue: #1515a4bd;
+  --darkGray: #444;
+}
+
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -42,7 +48,7 @@ ul{
 }
 
 .fa-solid, .icon{
-    color: darkcyan;
+    color: var(--darkBlue);
     padding-right: 15px;
 }
 
@@ -50,7 +56,7 @@ ul{
     width: 95%;
     margin: 0 auto;
     padding: 50px;
-    color: #444;
+    color: var(--darkGray);
 
     display: grid;
     grid-template-areas:
@@ -102,7 +108,7 @@ ul{
     padding-left: 20px;
 }
 .sidebar ul li a{
-    color: #444;
+    color: var(--darkGray);
 }
 
 
@@ -122,7 +128,7 @@ ul{
     border-radius: 10px;
 }
 .percent{
-    background-color: darkcyan;
+    background-color: var(--lightBlue);
     color: #fff;
     padding: 1px;
     font-size: 15px;
@@ -170,7 +176,7 @@ ul{
     max-width: 619px;
 }
 .education h1{
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid var(--darkGray);
     line-height: 2.5;
 }
 .education div{
@@ -198,7 +204,7 @@ ul{
 }
 .experience h1{
     line-height: 2.5;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid var(--darkGray);
 }
 .experience div{
     padding: 20px;
@@ -226,7 +232,7 @@ footer{
     border-top-left-radius: 10px;
 }
 /* footer p{
-    color: #444;
+    color: var(--darkGray);
     font-size: 13px;
 } */
 footer ul li{

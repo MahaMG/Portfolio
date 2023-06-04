@@ -9,9 +9,6 @@
     .banner .contact{
         padding: 40px;
     }
-    .sidebar {
-        width: calc(100% - 430px);
-    }
     .about .content .textBox {
         width: 100%;
         padding: 10px;
