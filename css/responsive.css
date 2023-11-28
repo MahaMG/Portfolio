@@ -1,120 +1,200 @@
-@media (max-width: 900px){
+@media (max-width: 1040px) {
+    .banner .contentBox {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 902px) {
     .banner .sidebarImg {
         width: 430px;
     }
+
     .banner .contentBox {
         width: calc(100% - 430px);
-        padding: 10px;
     }
-    .banner .contact{
+
+    .banner .contact {
         padding: 40px;
     }
-    .about .content .textBox {
-        width: 100%;
+
+    .about .content .breifBox .textBox {
+        width: 60%;
         padding: 10px;
     }
+
+    .about .content .breifBox .imgBox {
+        width: 30%;
+    }
+
+    .about .content .skillsBox .skills {
+        width: 40px;
+    }
+
     .services .content .servicesbox {
         padding: 20px;
         max-width: 300px;
     }
 }
 
-@media (max-width: 830px){
+@media (max-width: 830px) {
     .banner .sidebarImg {
         width: 360px;
     }
+
     .banner .contentBox {
         width: calc(100% - 360px);
         padding: 10px;
     }
-    .banner .contact{
+
+    .banner .contact {
         padding: 40px;
     }
+
     .sidebar {
         width: calc(100% - 360px);
     }
-    .about .content .textBox,
-    .about .content .imgBox{
-        width: 50%;
+
+    .about .content .breifBox {
+        width: 100%;
     }
-    .contact .contactContainer{
-        margin: 30px 0;
+
+    /* .about .content .breifBox .textBox, */
+    /* .about .content .breifBox .imgBox {
+        width: 50%;
+    } */
+
+    .about .content .skillsBox .skills {
+        width: 30px;
+    }
+
+    .contact .contactContainer {
+        margin: 100px 0;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-around;
     }
-    .contact .contactContainer .contactInfo{
-        border-left:  none;
+
+    .contact .contactContainer .contactInfo {
+        border-left: none;
         text-align: left;
         padding-left: 0;
     }
+
     .contact .contactContainer .contactForm .row .col50,
     .contact .contactContainer .contactForm .row .col100 {
         width: 100%;
     }
 
+    /* .contact .footer {
+        margin-top: 100px;
+    } */
+
 }
 
-@media (max-width: 750px) {
+@media (max-width: 770px) {
+    section {
+        padding: 80px 50px;
+    }
+
     .banner .sidebarImg {
         display: none;
     }
+
     .banner .contentBox {
         width: 100%;
     }
-    .about .content{
-        margin-top: 40px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column-reverse;
-        align-content: center;
+
+    .about .content .breifBox {
+        margin-top: 20px;
     }
-    .about .content .textBox{
-        margin-top: 50px;
-        text-align: center;
-        width: 100%;
-    }
-    .about .content .imgBox{
+
+    .about .content .breifBox .imgBox {
         margin: 0;
     }
+
+    .about .content .breifBox .imgBox img {
+        max-width: 80%;
+    }
+
+    .about .content .skillsBox .skills {
+        width: 20px;
+    }
+
     .sidebar {
         width: 50%
     }
-    .sidebar ul li a{
+
+    .sidebar ul li a {
         font-size: 1.8em;
     }
+
     .contact .contactForm .row {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .contact .contactForm .row .col50 {
         width: 80%;
     }
+
     .contact .contactForm .row textarea {
         width: 400px;
     }
+
     .sidebar ul li a {
         font-size: 1.5em;
     }
+
     .contact .contactForm {
         width: 400px;
     }
+
     .contact .contactForm .row .col50 {
         width: 100%;
     }
+
     .contact .contactForm .row textarea {
         width: 380px;
     }
 }
 
-@media (max-width: 450px) {
-    .about .content .textBox{
+@media (max-width: 705px) {
+    section {
+        padding: 30px 10px;
+    }
+
+    .about .content .breifBox {
+        flex-direction: column-reverse;
+    }
+
+    .about .content .breifBox .textBox {
+        width: 100%;
+        padding: 5px 10px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .about .content .breifBox .imgBox {
+        margin-left: 25px;
+    }
+
+    /* .about .content .skillsBox {} */
+
+    .about .content .skillsBox .skills li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .about .content .breifBox .textBox {
         padding: 0;
     }
-    .about .content .imgBox {
-        width: 100%;
+
+    .about .content .breifBox .imgBox {
+        width: 50%;
     }
-    
+
     .work .content {
         display: flex;
         justify-content: center;

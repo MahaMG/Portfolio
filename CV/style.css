@@ -3,56 +3,58 @@
 ===============
  
 1. global styles
-2. side bar
+2. sidebar
 3. Education
 4. Work Experience
-5. Footer
-6. Media Query
+5. certificates
+6. Footer
+7. Media Query
  
 */
- 
- 
+
+
 /* ===============
    1. global style
 ================ */
 :root {
-  --darkBlue: #1515a4e0;
-  --lightBlue: #1515a4bd;
-  --darkGray: #444;
+    --darkBlue: #1515a4e0;
+    --lightBlue: #1515a4bd;
+    --darkGray: #444;
 }
 
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-} 
- 
-*, 
-*:before, 
+}
+
+*,
+*:before,
 *:after {
     box-sizing: inherit;
     margin: 0;
 }
 
-body{
+body {
     background-color: #E9E9E9;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-ul{
+ul {
     padding: 0;
     list-style: none;
     line-height: 30px;
 }
 
-.fa-solid, .icon{
+.fa-solid,
+.icon {
     color: var(--darkBlue);
     padding-right: 15px;
 }
 
-.content{
+.content {
     width: 95%;
     margin: 0 auto;
     padding: 50px;
@@ -60,74 +62,84 @@ ul{
 
     display: grid;
     grid-template-areas:
+        "sidebar  experience experience"
         "sidebar education education"
-        "sidebar  experience experience";
+        ". certificates certificates";
     justify-content: center;
     align-items: stretch;
 }
 
-.sidebar, 
-.education, 
-.experience{
+.content section {
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 5px 5px 10px lightgray, -5px -5px 10px lightgray;
 }
 
+.content section div li {
+    line-height: 1.5;
+    margin-left: 15px;
+}
+
 /* ===============
-   2. side bar
+   2. sidebar
 ================ */
 
-.sidebar{
+.sidebar {
     grid-area: sidebar;
     width: 350px;
     margin-right: 10px;
     padding: 30px 15px;
-    max-height: 900px;
+    /* max-height: 1200px; */
 }
+
 .sidebar h2 {
     margin: 15px;
 }
+
 /********** breif  */
-.breif{
+.breif {
     padding-bottom: 20px;
-    min-height: 250px;
-}
-.avatar{
-    position: relative;
-}
-.avatar h1{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 25px;
+    min-height: 200px;
 }
 
-.sidebar ul{
+.myName {
+    position: relative;
+}
+
+.myName h1 {
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    font-size: 28px;
+}
+
+.sidebar ul {
     padding-top: 70px;
     padding-left: 20px;
 }
-.sidebar ul li a{
+
+.sidebar ul li a {
     color: var(--darkGray);
 }
 
 
 /********** skills  */
-.skill-level{
+.skill-level {
     margin: 20px 10px;
     padding: 15px 0;
 }
 
-.level p{
+.level p {
     margin-left: 10px;
 }
 
-.skill-container{
+.skill-container {
     background-color: #e2e2e2;
     margin: 10px 5px;
     border-radius: 10px;
 }
-.percent{
+
+.percent {
     background-color: var(--lightBlue);
     color: #fff;
     padding: 1px;
@@ -135,93 +147,155 @@ ul{
     text-align: center;
     border-radius: 10px;
 }
-.percent-html::after{ content: "90%";}
-.percent-html{ width: 90%; }
 
-.percent-js::after{ content: "70%";}
-.percent-js{ width: 70%; }
+.percent-ui::after {
+    content: "90%";
+}
 
-.percent-py::after{ content: "60%";}
-.percent-py{ width: 60%; }
+.percent-ui {
+    width: 90%;
+}
 
-.percent-mysql::after{ content: "70%";}
-.percent-mysql{ width: 70%; }
+.percent-react::after {
+    content: "70%";
+}
 
-.percent-mongo::after{ content: "50%";}
-.percent-mongo{ width: 50%; }
+.percent-react {
+    width: 70%;
+}
 
+.percent-py::after {
+    content: "60%";
+}
 
-/********** Langauge  */
-.lang{
+.percent-py {
+    width: 60%;
+}
+
+.percent-mysql::after {
+    content: "70%";
+}
+
+.percent-mysql {
+    width: 70%;
+}
+
+.percent-mongo::after {
+    content: "50%";
+}
+
+.percent-mongo {
+    width: 50%;
+}
+
+/********** Soft skills, Langauge  */
+.softSkills li, .lang li {
+    margin-left: 25px !important;
+    line-height: 1.6;
+}
+
+.lang {
     margin: 20px 10px;
     padding: 15px 0;
 }
 
-.lang1, .lang2{
-    background-color: #e2e2e2;
-    margin: 10px 5px;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
 
 /* ===============
    3. Education
 ================ */
 
-.education{
+.education {
     grid-area: education;
     margin-bottom: 20px;
     margin-left: 10px;
     padding: 30px;
-    max-width: 619px;
 }
-.education h1{
+
+.education h1 {
     border-bottom: 1px solid var(--darkGray);
     line-height: 2.5;
 }
-.education div{
+
+.education div {
     padding: 20px;
 }
-.education div h3{
+
+.education div h3 {
     padding: 5px 0;
 }
-.education div p{
+
+.education div p {
     padding: 5px;
     line-height: 2;
 }
-
 
 /* ===============
    4. Work Experience
 ================ */
 
-.experience{
+.experience {
     grid-area: experience;
     margin-bottom: 20px;
     margin-left: 10px;
     padding: 30px;
-    max-width: 619px;
 }
-.experience h1{
+
+.experience h1 {
     line-height: 2.5;
     border-bottom: 1px solid var(--darkGray);
 }
-.experience div{
+
+.experience div {
     padding: 20px;
 }
-.experience div h3{
+
+.experience div h3 {
     padding: 5px 0;
 }
-.experience div p{
+
+.experience div p {
+    padding: 5px;
+    line-height: 2;
+}
+
+/* .experience div li {
+    line-height: 1.5;
+} */
+
+/* ===============
+   5. certificates
+================ */
+
+.certificates {
+    grid-area: certificates;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 30px;
+}
+
+.certificates h1 {
+    line-height: 2.5;
+    border-bottom: 1px solid var(--darkGray);
+}
+
+.certificates div {
+    padding: 20px;
+}
+
+.certificates div h3 {
+    padding: 5px 0;
+}
+
+.certificates div p {
     padding: 5px;
     line-height: 2;
 }
 
 /* ===============
-   5. Footer
+   6. Footer
 ================ */
 
-footer{
+footer {
     width: 100%;
     padding: 15px;
     text-align: center;
@@ -231,11 +305,12 @@ footer{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
-/* footer p{
+
+footer p {
     color: var(--darkGray);
-    font-size: 13px;
-} */
-footer ul li{
+}
+
+footer ul li {
     margin-top: 15px;
     list-style: none;
     display: inline-block;
@@ -244,34 +319,74 @@ footer ul li{
 
 
 /* ==================
-   6. Media Query
+   7. Media Query
 ==================== */
 
-@media (max-width: 900px) {
-    .sidebar{
-        width: 300px;
-    } 
-    .education, 
-    .experience{
+@media (max-width: 1035px) {
+    .sidebar {
+        max-height: 1200px;
+    }
+
+    .content section {
+        width: 500px;
+    }
+
+    .content .sidebar {
         width: 350px;
     }
+
 }
 
-@media (max-width: 660px) {
-    .content{
-        width: 100%;
-        padding: 20px;
-    
+@media (max-width: 960px) {
+    .content {
+        display: grid;
         grid-template-areas:
-            "sidebar sidebar"
-            "education education"
-            "experience experience";
+            "sidebar  experience"
+            ". education"
+            ". certificates";
     }
 
-    .sidebar, 
-    .education, 
-    .experience{
-        width: 90%;
-        margin: 15px;
+        .content section {
+            width: 450px;
+        }
+    
+        .content .sidebar {
+            width: 350px;
+        }
+}
+
+@media (max-width: 840px) {
+    .content {
+        grid-template-areas:
+            "sidebar  experience"
+            ". education"
+            ". certificates";
+    }
+
+        .content section {
+            width: 400px;
+        }
+    
+        .content .sidebar {
+            width: 350px;
+        }
+}
+
+@media (max-width: 790px) {
+    .content {
+        margin: 15px auto;
+        padding: 20px;
+        
+        grid-template-areas:
+        "sidebar"
+        "experience"
+        "education"
+        "certificates";
+    }
+    
+    .content section, .content .sidebar {
+        width: 100%;
+        width: 95%;
+        margin: 15px 20px;
     }
 }
